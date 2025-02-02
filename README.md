@@ -1,4 +1,4 @@
-# This repository will contain artifacts from the lessons for the course QA Automation with JS/TS (Jan 2025)
+# This repository will contain homework from the lessons for the course QA Automation with JS/TS (Jan 2025)
 
 **Lesson 1** - No artifacts
 
