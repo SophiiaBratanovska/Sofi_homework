@@ -1,3 +1,6 @@
+/*Створити файл switch.js, у якому переписати розгалужену конструкцію if-else if-else
+з файлу decision-tree.js із застосування switch.*/
+
 let fte = 0.5;
 let monthly_salary = 1000;
 let bonus = 50;
