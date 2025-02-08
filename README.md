@@ -6,7 +6,7 @@
 
 **Lesson 3** - [lesson3-js-essentials-part1](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson3-js-essentials-part1) 
  
-**Lesson 4** - [lesson4-arrays](https://github.com/SophiiaBratanovska/Sofi_homework/tree/6167505453ab1203ca42f6867ca340fd8d674bf8/lesson4-arrays ) 
+**Lesson 4** - 
 
 **Lesson 5**
 
