@@ -8,6 +8,6 @@
  
 **Lesson 4** - [lesson4-arrays](https://github.com/SophiiaBratanovska/Sofi_homework/tree/446755b03ab0c346ac28fbafefcc927b06064ce6/lesson4-arrays/src)
 
-**Lesson 5** - [lesson5-functions]()
+**Lesson 5** - [lesson5-functions](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson5-functions/src)
 
 **Lesson 6**
