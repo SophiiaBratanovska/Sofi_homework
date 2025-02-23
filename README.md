@@ -1,15 +1,24 @@
-# This repository will contain homework from the lessons for the course QA Automation with JS/TS (Jan 2025)
+# ts-eslint-config
+recommended config from me for programming on a TypeScript
 
-**Lesson 1** - No artifacts https://take.ms/5VSd2
+In order to use this config you have to install the following NPM packages
+```
+npm i -D typescript ts-node eslint typescript-eslint @eslint/js @typescript-eslint/eslint-plugin @typescript-eslint/parser @stylistic/eslint-plugin @stylistic/eslint-plugin-ts eslint-plugin-prettier eslint-plugin-unicorn prettier globals
+```
 
-**Lesson 2** - [lesson2-play-with-git](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson2-play-with-git)
+Then put eslint.config.mjs into your base directory
 
-**Lesson 3** - [lesson3-js-essentials-part1](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson3-js-essentials-part1) 
- 
-**Lesson 4** - [lesson4-arrays](https://github.com/SophiiaBratanovska/Sofi_homework/tree/446755b03ab0c346ac28fbafefcc927b06064ce6/lesson4-arrays/src)
+you can add a script to your package.json
+```
+"scripts": {
+  "lint": "eslint .",
+  "build": "npm run lint && tsc --build",
+}
+```
 
-**Lesson 5** - [lesson5-functions](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson5-functions/src)
+**Alternatively**, just copy the content of this folder into your project folder and run
+```
+npm i
+```
 
-**Lesson 6** - [lesson6-try-catch-async](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson6-try-catch-async)
-
-**Lesson 7** - [lesson7-ts-basics](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson7-ts-basics)
+and start coding
