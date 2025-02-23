@@ -11,3 +11,5 @@
 **Lesson 5** - [lesson5-functions](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson5-functions/src)
 
 **Lesson 6** - [lesson6-try-catch-async](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson6-try-catch-async)
+
+**Lesson 7** - [lesson7-ts-basics](https://github.com/SophiiaBratanovska/Sofi_homework/tree/master/lesson7-ts-basics)
