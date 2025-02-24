@@ -9,8 +9,8 @@ const sumArrayArrow = (arr: (number | string)[]): number => {
     return sum;
 };
 
-const numberArrayArrow: number[] = [1, 2, 3, 4, 5];
-const stringArrayArrow: string[] = ['10', '20', '30', '40', 'qa'];
+const numberArrayArrow = [1, 2, 3, 4, 5];
+const stringArrayArrow = ['10', '20', '30', '40', 'qa'];
 
 console.log('numberArrayArrow:', sumArrayArrow(numberArrayArrow));
 console.log('stringArrayArrow:', sumArrayArrow(stringArrayArrow));

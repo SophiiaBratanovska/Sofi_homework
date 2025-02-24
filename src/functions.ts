@@ -9,8 +9,8 @@ function sumArray(arr: (number | string)[]): number {
     return sum;
 }
 
-const numberArray: number[] = [1, 2, 3, 4, 5];
-const stringArray: string[] = ['10', '20', '30', '40', 'qa'];
+const numberArray = [1, 2, 3, 4, 5];
+const stringArray = ['10', '20', '30', '40', 'qa'];
 
 console.log('Sum numberArray:', sumArray(numberArray));
 console.log('Sum stringArray:', sumArray(stringArray));
