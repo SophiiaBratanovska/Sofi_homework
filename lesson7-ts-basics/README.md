@@ -1,24 +1,27 @@
-# ts-eslint-config
-recommended config from me for programming on a TypeScript
+# Lesson 7 - TS Basics
 
-In order to use this config you have to install the following NPM packages
-```
-npm i -D typescript ts-node eslint typescript-eslint @eslint/js @typescript-eslint/eslint-plugin @typescript-eslint/parser @stylistic/eslint-plugin @stylistic/eslint-plugin-ts eslint-plugin-prettier eslint-plugin-unicorn prettier globals
-```
+## This lesson covers the following topics:
 
-Then put eslint.config.mjs into your base directory
+1. **What is TypeScript**
+2. **How to add it to the nodejs project**
+3. **ESLint configuration**
+4. **Compilation using tsc**
+5. **Running ts using ts-node**
+6. **var and function typing**
+7. **some new types**
 
-you can add a script to your package.json
-```
-"scripts": {
-  "lint": "eslint .",
-  "build": "npm run lint && tsc --build",
-}
-```
+## How to Run the Code
 
-**Alternatively**, just copy the content of this folder into your project folder and run
-```
-npm i
-```
+To run the code, follow these steps:
 
-and start coding
+1. Install the necessary dependencies:
+    ```sh
+    npm install
+    ```
+
+2. Execute the JavaScript file:
+    ```sh
+    npx ts-node src/<filename>.ts
+    ```
+
+Replace `<filename>` with the name of the JavaScript file you want to run.

@@ -1,27 +1,17 @@
-# Lesson 7 - TS Basics
+# This repository will contain artifacts from the lessons for the course QA Automation with JS/TS (Jan 2025)
 
-## This lesson covers the following topics:
+**Lesson 1** - No artifacts
 
-1. **What is TypeScript**
-2. **How to add it to the nodejs project**
-3. **ESLint configuration**
-4. **Compilation using tsc**
-5. **Running ts using ts-node**
-6. **var and function typing**
-7. **some new types**
+**Lesson 2** - [lesson2-play-with-git](./lesson2-play-with-git)
 
-## How to Run the Code
+**Lesson 3** - [lesson3-js-essentials-part1](./lesson3-js-essentials-part1)
 
-To run the code, follow these steps:
+**Lesson 4** - [lesson4-arrays-and-objects](./lesson4-arrays-and-objects)
 
-1. Install the necessary dependencies:
-    ```sh
-    npm install
-    ```
+**Lesson 5** - [lesson5-functions](./lesson5-functions)
 
-2. Execute the JavaScript file:
-    ```sh
-    npx ts-node src/<filename>.ts
-    ```
+**Lesson 6** - [lesson6-try-catch-async](./lesson6-try-catch-async)
 
-Replace `<filename>` with the name of the JavaScript file you want to run.
+**Lesson 7** - [lesson7-ts-basics](./lesson7-ts-basics)
+
+**Lesson 8** - []()
