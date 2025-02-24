@@ -6,7 +6,7 @@
 
 **Lesson 3** - [lesson3-js-essentials-part1](./lesson3-js-essentials-part1)
 
-**Lesson 4** - [lesson4-arrays-and-objects](./lesson4-arrays-and-objects)
+**Lesson 4** - [lesson4-arrays-and-objects](./lesson4-arrays)
 
 **Lesson 5** - [lesson5-functions](./lesson5-functions)
 
