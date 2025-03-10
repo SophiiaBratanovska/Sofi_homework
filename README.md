@@ -14,4 +14,6 @@
 
 **Lesson 7** - [lesson7-ts-basics](./lesson7-ts-basics)
 
-**Lesson 8** - []()
+**Lesson 8** - [lesson8-ts-interfaces-classes](./lesson8-ts-interfaces-classes)
+
+**Lesson 9** - []()

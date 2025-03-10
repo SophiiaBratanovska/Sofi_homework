@@ -14,4 +14,10 @@ async function createUserInfo(): Promise<void> {
     detailedUser.displayInfo();
 }
 
-createUserInfo();
+createUserInfo()
+    .then(() => {
+        console.log('User info created successfully');
+    })
+    .catch((error) => {
+        console.error('Error creating user info:', error);
+    });
