@@ -16,4 +16,4 @@
 
 **Lesson 8** - [lesson8-ts-interfaces-classes](./lesson8-ts-interfaces-classes)
 
-**Lesson 9** - []()
+**Lesson 9** - [lesson9-oop-solid](./lesson9-oop-solid)
