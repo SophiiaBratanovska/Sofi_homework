@@ -1,14 +1,14 @@
-import { Switchable } from "./Switchable";
+import { ISwitchable } from "./i-switchable";
 
-export abstract class LightSource implements Switchable {
+export abstract class LightSource implements ISwitchable {
     protected isOn: boolean = false;
     
-    turnOn(): void {
+    public turnOn(): void {
         this.isOn = true;
         console.log(`${this.constructor.name} is On`);
     }
     
-    turnOff(): void {
+    public turnOff(): void {
         this.isOn = false;
         console.log(`${this.constructor.name} Off`);
     }

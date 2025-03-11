@@ -1,6 +1,6 @@
 import { Lamp } from "./Lamp";
-import { SmartLamp } from "./SmartLamp";
-import { controlLight } from "./controlLight";
+import { SmartLamp } from "./smart-lamp";
+import { controlLight } from "./control-light";
 
 const regularLamp = new Lamp();
 const smartLamp = new SmartLamp();
