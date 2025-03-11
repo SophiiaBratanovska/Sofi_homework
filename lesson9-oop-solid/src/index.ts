@@ -1,4 +1,4 @@
-import { Lamp } from "./Lamp";
+import { Lamp } from "./lamp";
 import { SmartLamp } from "./smart-lamp";
 import { controlLight } from "./control-light";
 
