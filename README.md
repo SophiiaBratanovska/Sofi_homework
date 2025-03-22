@@ -18,4 +18,4 @@
 
 **Lesson 9** - [lesson9-oop-solid](./lesson9-oop-solid)
 
-**Lesson 10** - [lesson10](./lesson10)
+**Lesson 10** - [lesson-10](./lesson-10)
