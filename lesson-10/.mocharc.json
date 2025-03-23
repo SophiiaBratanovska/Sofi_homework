@@ -1,0 +1,6 @@
+{
+    "extension": "ts",
+    "require": ["tsx"],
+    "spec": "src/**/*.spec.ts",
+    "retires": 2
+}
