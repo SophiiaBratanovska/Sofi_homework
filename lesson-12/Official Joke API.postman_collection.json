@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "b5d711c9-d9d9-48c0-a83c-d54dd3da3272",
+		"name": "Official Joke API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27497337"
+	},
+	"item": [
+		{
+			"name": "/jokes/random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Жарт має правильну структуру\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"id\").that.is.a(\"number\");",
+							"    pm.expect(jsonData).to.have.property(\"type\").that.is.a(\"string\");",
+							"    pm.expect(jsonData).to.have.property(\"setup\").that.is.a(\"string\");",
+							"    pm.expect(jsonData).to.have.property(\"punchline\").that.is.a(\"string\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Статус відповіді 200 OK\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Тип жарту – рядок і не порожній\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData.type).to.be.a(\"string\").and.not.empty;",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{link}}/jokes/random",
+					"host": [
+						"{{link}}"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/programming/random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Статус відповіді 200 OK\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Відповідь є масивом\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.be.an(\"array\");",
+							"});",
+							"",
+							"pm.test(\"Масив містить елементи\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.be.above(0);",
+							"});",
+							"",
+							"pm.test(\"Кожен елемент масиву має правильні поля\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    jsonData.forEach((joke) => {",
+							"        pm.expect(joke).to.have.property(\"id\").that.is.a(\"number\");",
+							"        pm.expect(joke).to.have.property(\"type\").that.is.a(\"string\");",
+							"        pm.expect(joke).to.have.property(\"setup\").that.is.a(\"string\");",
+							"        pm.expect(joke).to.have.property(\"punchline\").that.is.a(\"string\");",
+							"    });",
+							"});",
+							"",
+							"pm.test(\"Всі жарти – типу 'programming'\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    jsonData.forEach((joke) => {",
+							"        pm.expect(joke.type).to.eql(\"programming\");",
+							"    });",
+							"});",
+							"",
+							"pm.test(\"Жарти мають непорожні setup і punchline\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    jsonData.forEach((joke) => {",
+							"        pm.expect(joke.setup).to.be.a(\"string\").and.not.empty;",
+							"        pm.expect(joke.punchline).to.be.a(\"string\").and.not.empty;",
+							"    });",
+							"});",
+							"",
+							"pm.test(\"Отримано 1 жарт\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eql(1);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{link}}/jokes/programming/random",
+					"host": [
+						"{{link}}"
+					],
+					"path": [
+						"jokes",
+						"programming",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jokes/programming/ten",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Масив містить рівно 10 жартів\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eql(10);",
+							"});",
+							"",
+							"pm.test(\"Кожен жарт має id, type, setup і punchline\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    jsonData.forEach((joke) => {",
+							"        pm.expect(joke).to.have.property(\"id\").that.is.a(\"number\");",
+							"        pm.expect(joke).to.have.property(\"type\").that.is.a(\"string\");",
+							"        pm.expect(joke).to.have.property(\"setup\").that.is.a(\"string\");",
+							"        pm.expect(joke).to.have.property(\"punchline\").that.is.a(\"string\");",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{link}}/jokes/programming/ten",
+					"host": [
+						"{{link}}"
+					],
+					"path": [
+						"jokes",
+						"programming",
+						"ten"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "link",
+			"value": "http://localhost:3005",
+			"type": "string"
+		}
+	]
+}
