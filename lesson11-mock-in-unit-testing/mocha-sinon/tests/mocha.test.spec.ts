@@ -22,6 +22,7 @@ describe('controlLight function (with Sinon fake timers)', function () {
 
     afterEach(() => {
         sinon.restore();
+        clock.restore();
     });
 
     it('should turn on the device immediately', function () {
